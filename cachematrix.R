@@ -1,7 +1,7 @@
 ## Write a short comment describing this function
 
 
-makeCacheMatrix <- function(x = matrix()) {  ## The first function, makeCacheMatrix, creates a matrix
+makeCacheMatrix <- function(x = matrix()) {  ## The first function, makeCacheMatrix that creates a matrix
 inv <- NULL
   set <- function(y){
     x <<- y
@@ -17,10 +17,8 @@ inv <- NULL
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) { ## The second function, cacheSolve that calculates the inverse of the matrix created
-  inv <- x$getInverse()
+   inv <- x$getInverse()
   if(!is.null(inv)){
-  getInverse <- function(
-## Write a short comment describing this func calculates 
     message("getting cached data")
     return(inv)
   }
