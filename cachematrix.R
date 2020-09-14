@@ -1,9 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+
+makeCacheMatrix <- function(x = matrix()) {  ## The first function, makeCacheMatrix, creates a matrix
 inv <- NULL
   set <- function(y){
     x <<- y
@@ -18,9 +16,11 @@ inv <- NULL
 
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) { ## The second function, cacheSolve that calculates the inverse of the matrix created
   inv <- x$getInverse()
   if(!is.null(inv)){
+  getInverse <- function(
+## Write a short comment describing this func calculates 
     message("getting cached data")
     return(inv)
   }
@@ -28,4 +28,5 @@ cacheSolve <- function(x, ...) {
   inv <- solve(mat, ...)
   x$setInverse(inv)
   inv     ## Return a matrix that is the inverse of 'x'
+  
 }
